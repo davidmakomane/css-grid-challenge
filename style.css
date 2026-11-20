@@ -1,0 +1,41 @@
+
+@media (min-width: 1000px) {
+
+    body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 60px 30px;
+    }
+
+    .testimonials {
+        grid-template-columns: repeat(4, 1fr);
+
+        grid-template-areas:
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira";
+
+        gap: 24px;
+    }
+
+    .daniel {
+        grid-area: daniel;
+    }
+
+    .jonathan {
+        grid-area: jonathan;
+    }
+
+    .kira {
+        grid-area: kira;
+    }
+
+    .jeanette {
+        grid-area: jeanette;
+    }
+
+    .patrick {
+        grid-area: patrick;
+    }
+
+}
